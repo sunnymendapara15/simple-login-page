@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-card">
+      <div class="logo">My App</div>
+      <h1>Welcome Back</h1>
+      <p>Sign in to keep exploring.</p>
+      <form class="login-form" novalidate>
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+        <button type="submit">Sign in</button>
+        <div class="helper-row">
+          <label class="remember">
+            <input type="checkbox" name="remember">
+            Remember me
+          </label>
+          <a href="#" class="link-muted">Forgot password?</a>
+        </div>
+        <p class="status-message" aria-live="polite"></p>
+      </form>
+      <p class="caption">New here? <a href="#">Create an account</a></p>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
